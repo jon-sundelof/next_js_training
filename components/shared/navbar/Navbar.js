@@ -1,12 +1,4 @@
 import Link from "next/Link";
-// import styles from "./Nav.module.css";
-
-/* const navBarStyle = {
-  backgroundColor: "grey",
-  color: "white",
-  width: "100%",
-  height: "60px",
-}; */
 
 const Navbar = () => {
   return (
@@ -39,31 +31,32 @@ const Navbar = () => {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
+          <Link href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <a >
+            About
+          </a>
+          </Link>
+          <Link href="/projects">
           <a
-            href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
           >
             Projects
           </a>
+          </Link>
+          <Link href="/contact">
           <a
-            href="#responsive-header"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
-          >
-            Examples
-          </a>
-          <a
-            href="#responsive-header"
             className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
           >
-            Blog
+            Contact
           </a>
+          </Link>
         </div>
         <div>
           <a
-            href="#"
+            href="/advendtures"
             className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
           >
-            Download
+            Click for Adventures
           </a>
         </div>
       </div>
